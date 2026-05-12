@@ -3,8 +3,11 @@
    goal: make the boxes sit in a row
    ============================================= */
 .challenge-1 {
+  display:flex;
   background-color: grey;
   width: 100vw;
+  flex-direction:row;
+  
   /* add code below */
 
 
@@ -16,11 +19,10 @@
    goal: make the boxes stack in a column
    ============================================= */
 .challenge-2 {
+  display:flex;
   background-color: grey;
   width: 100vw;
-  display: flex;
-  /* add code below*/
-
+ flex-direction: column;
 
 
 }
@@ -34,7 +36,9 @@
 .challenge-3 {
   background-color: grey;
   width: 100vw;
-  /* add code below */
+  display:flex;
+ flex-direction:column; 
+ align-items: center;
 
 
 }
@@ -48,7 +52,8 @@
   background-color: grey;
   width: 100vw;
   height: 400px;
-  /* add code below */
+  display:flex;
+  align-items: center;
 
 
 
@@ -92,21 +97,25 @@ on the children, the rest are properties you have used in past challenges
 .challenge-6 {
   width: 100vw;
   height: 320px;
-    /* add code below */
+  display:flex;
+  flex-direction: column;
 
 }
 
 .c-6-child-1 {
   background-color: lightgrey;
-  /* add code below */
-
-
+  display:flex;
+  justify-content: space-around;
+align-items: flex-start;
+flex:1
 }
 
 .c-6-child-2 {
   background-color: darkgrey;
-
-  /* add code below */
+  display: flex;
+  justify-content: space-around;
+  align-items: self-start;
+  flex:1
 }
 
 
